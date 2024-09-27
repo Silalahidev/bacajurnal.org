@@ -390,7 +390,16 @@
 									<textarea rows="6" id="message" class="form-control" placeholder="Your Message" required="required"></textarea>
 								</div>
 								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-default main_btn" title="Submit Your Message!">Send Message</button>
+										<button  id="sweet" type="submit" class="btn btn-default main_btn" title="Submit Your Message!">Send Message</button>
+										<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+										<script>
+										document.getElementById('sweet').addEventListener('click', function() {
+											Swal.fire({
+											title: "Thank You !",
+											icon: "success"
+											});
+										});
+										</script>
 								</div>
 							</div>
 						</form>
